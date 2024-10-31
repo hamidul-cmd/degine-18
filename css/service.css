@@ -1,0 +1,109 @@
+.service {
+    background-color: #f2f2f2;
+    margin-top: 200px;
+}
+
+.service__container {
+    padding-inline: 138px;
+    text-align: center;
+
+}
+
+.service__titel {
+    margin-top: 100px;
+}
+
+.service__titel h3 {
+    font-size: 1.18rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #2B2B2B;
+}
+
+.service__titel h2 {
+    font-size: var(--fs-h2);
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.service__boxs {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 137px;
+}
+
+.service__boxs .service__box {
+    height: 363px;
+    width: 340px;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding-inline: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 10px 30px #0000000e;
+}
+.service__box .image {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #4361EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    box-shadow: 4px 10px 30px #4362ee8c;
+}
+.service__box h4 {
+    font-size: var(--fs-h4);
+    font-weight: 600;
+    margin-top: 25px;
+    color: #2B2B2B;
+}
+.service__box p {
+    font-size: var(--fs-p);
+    font-weight: 400;
+    color: #808080;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+
+@media (max-width:980px)  {
+    .service__container {
+        padding-inline: 30px;
+    }
+    .service__titel h2 {
+        margin-top: 20px;
+    }
+    .service__boxs {
+        margin-bottom: 100px;
+    }
+    .service__boxs .service__box {
+        padding-inline: 45px;
+        width: 333px;
+        height: 239px;
+    }
+    .service__box .image {
+        margin-top: 40px;
+        height: 60px;
+        width: 60px;
+        margin-top: 30px;
+    }
+    .service__box .image img {
+        height: 26px;
+    }
+    .service__box h4 {
+        margin-top: 10px;
+
+    }
+    .service__box p  {
+        margin-bottom: 40px;
+        margin-top: 5px;
+    }
+}

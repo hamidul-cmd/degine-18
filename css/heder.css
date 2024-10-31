@@ -1,0 +1,128 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px;
+    position: relative;
+}
+nav .manu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.manu ul li {
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in;
+}
+.manu ul li:hover {
+    background-color: var(--sec-color);
+
+}
+.manu ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo .img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--primare-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+.button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.button .login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.button .login span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+nav .add {
+    padding: 15px 26px;
+    background-color: var(--primare-color);
+    border-radius: 50px;
+}
+
+nav .add span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 8px;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #2B2B2B;
+}
+@media (max-width:980px) {
+    nav {
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .hamburger {
+        display: inline-block;
+
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .button .add {
+        display: none;
+    }
+    .manu .nav-manu{
+        position: fixed;
+        z-index: 5;
+        flex-direction: column;
+        right: -100%;
+        top: 60px;
+        height: 30vh;
+        width: 100vw;
+        display: flex;
+        gap: 18px;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--sec-color);
+    }
+    .manu ul li a {
+        color: var(--primare-color);
+    }
+    .nav-manu.active {
+        right: 0;
+    }
+    
+}

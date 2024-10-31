@@ -1,0 +1,60 @@
+.introduce .container {
+    padding-inline: 138px;
+    text-align: center;
+}
+
+.introduce__titel h3 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.introduce__titel h2 {
+    font-size: var(--fs-h2);
+    font-weight: 600;
+    margin-top: 30px;
+    color: #2B2B2B;
+}
+
+.introduce__box {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 63px;
+    flex-wrap: wrap;
+}
+.introduce__box .cird img {
+    border-top-left-radius: 120px;
+    border-top-right-radius: 40px;
+    border-bottom: 40px 40px;
+}
+
+.introduce__box .cird h3 {
+    font-size: clamp(1rem, 0.74rem + 1.05vw, 1.68rem);
+    font-weight: 600;
+    color: #0B090A;
+    margin-top: 10px;
+}
+.introduce__box .cird h4 {
+    margin-top: 10px;
+    font-size: var(--fs-h4);
+    font-weight: 400;
+}
+
+@media (max-width:480px) {
+    .introduce .container {
+        padding-inline: 20px;
+    }
+    .introduce__titel h2 {
+        margin-top: 20px;
+    }
+    .introduce__box  {
+        gap: 50px;
+        margin-top: 40px;
+    }
+    .introduce__box .cird img {
+        height: 168px;
+        width: 120px;
+    }
+}
+
+

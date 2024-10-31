@@ -1,0 +1,229 @@
+.hero {
+    background-image: url(Rectangle\ 4.svg);
+    background-repeat: no-repeat;
+    background-position:  center bottom;
+    background-size: cover;
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    padding-top: 60px;
+    position: relative;
+}
+
+ .link {
+    font-size: var(--fs-a);
+    font-weight: 500;
+    color: #4361EE;
+}
+
+.left h1 {
+    font-size: var(--fs-h1);
+    font-weight: 600;
+    line-height: 1.14;
+    color: #0B090A;
+    margin-top: 30px;
+}
+
+.left p {
+    font-size: var(--fs-p);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #808080;
+    margin-top: 40px;
+}
+
+.left .slider {
+    margin-top: 40px;
+    margin-left: -25px;
+    position: relative;
+}
+.left .slider img {
+    width: 100%;
+    height: auto;
+}
+.left .slider .slider__button_1 {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.left .slider .slider__button_2 {
+    position: absolute;
+    top: 45%;
+    right: 28px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.left .slider .slider__button_1 i, .left .slider .slider__button_2 i {
+    font-size: 25px;
+    color: #AAAAAA;
+}
+.right {
+     background-color: #fff;
+     padding-block-end: 60px;
+     padding-inline: 40px;
+     border-radius: 30px;
+     box-shadow: 10px 30px 50px #00000005;
+
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 42px;
+    padding-block: 40px 30px;
+    border-bottom: 2px solid #bbbabe;
+}
+.top .rent {
+    margin-left: 125px;
+
+}
+.bottom .input {
+padding-block: 20px;
+padding-inline: 20px 95px;
+border-radius: 20px;
+background-color: #f6f6f6;
+color: #6D6A75;
+outline: none;
+border: none;
+font-size: 1rem;
+margin-top: 20px;
+
+}
+.right .advance {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.right .advance  span {
+margin-left: 10px;
+}
+.right #button {
+    padding: 20px 127px;
+    border-radius: 50px;
+    margin-top: 60px;
+    background-color: var(--primare-color);
+    color: #fff;
+}
+.right #button span {
+    margin-left: 10px;
+}
+.right #button i {
+    font-size: 20px;
+}
+.container .svg {
+    position: absolute;
+    top: 49%;
+    left: 42%;
+    z-index: -2;
+}
+.hero .hero__footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+.hero .box {
+    padding: 28px 37px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 10px 30px 50px #00000005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.box1 .image img {
+   margin-left: -15px;
+}
+.box .text p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+@media (max-width:980px) {
+    .hero .container {
+        flex-direction: column;
+        padding-inline: 30px;
+        text-align: left;
+        gap: 40px;
+    }
+    .left a {
+        padding-right: 200px;
+    }
+    .left h1 {
+        margin-top: 20px;
+    }
+    .left p {
+        margin-top: 30px;
+    }
+    .left p br {
+        display: none;
+    }
+    .container .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left .slider img {
+       height: 210px;
+       width: 330px;
+       margin: auto;
+    }
+    .right {
+        padding-block-end: 40px;
+        padding-inline: 20px;
+    }
+    .top {
+        padding-block: 30px 20px;
+    }
+    .bottom .input {
+        padding-inline: 18px 32px;
+    }
+    .right #button {
+        padding: 20px 100px;
+    }
+    .top {
+        padding-inline: 20px;
+    }
+    .top .rent {
+        margin-left: 68px;
+    }
+    .container .svg {
+        top: 31%;
+        left: 65%;
+    }
+}
+@media (max-width:600px) {
+    .hero {
+        background-image: url(Rectangle\ 4\ \(1\).svg);
+        background-position: bottom bottom;
+    }
+    .hero .hero__footer {
+        flex-direction: column;
+        align-items: center;
+    } 
+}

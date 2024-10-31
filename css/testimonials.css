@@ -1,0 +1,213 @@
+.testimonials .container {
+    padding-inline: 138px;
+    margin-block: 180px;
+
+}
+
+.customer__coment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.coment__titel h2 {
+    font-size: var(--fs-h2);
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-top: 15px;
+
+}
+
+.coment__titel p {
+    font-size: var(--fs-p);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #2B2B2B;
+    margin-top: 15px;
+}
+
+.buttons {
+    margin-top: 60px;
+}
+
+.buttons .btn {
+    padding: 13px 15px;
+    border: 2px solid #4361EE;
+    border-radius: 50%;
+
+}
+
+.buttons .btn i {
+    font-size: 20px;
+    color: #4361EE;
+}
+
+.buttons .btn_2 {
+    margin-left: 50px;
+}
+
+.coment__box {
+    position: relative;
+    padding: 35px 50px;
+    box-shadow: 10px 10px 30px hsla(0, 0%, 0%, 0.164);
+    border-radius: 30px;
+    z-index: 5;
+}
+
+.coment__box .cotetion_svg {
+    margin-bottom: 18px;
+}
+
+.coment__box p {
+    font-size: clamp(1rem, 0.92rem + 0.28vw, 1.1875rem);
+    font-weight: 500;
+    color: #2B2B2B;
+    margin-bottom: 40px;
+}
+
+.coment__box .separetion {
+    width: 100%;
+    height: 1.5px;
+    background-color: #D4D4D4;
+    margin-bottom: 20px;
+}
+
+.coment__box .coment_woner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coment__box .profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.coment__box .profile h4 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.coment__box .rating i {
+    color: #FFC700;
+}
+
+.coment__box .rating .last_ster {
+    color: #D4D4D4;
+}
+
+.absulut_svg {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: -27px;
+    left: 57%;
+    z-index: 1;
+}
+
+.agent {
+    height: 260px;
+    width: auto;
+    border-radius: 40px;
+    margin-top: 250px;
+    background-color: var(--primare-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.agent .person__img {
+    margin-top: -43px;
+    position: relative;
+    z-index: 2;
+}
+.agent h2 {
+    font-size: var(--fs-h2);
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.agent p {
+    font-size: var(--fs-p);
+    color: #fff;
+}
+.agent .register__button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primare-color);
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+
+}
+.agent .sgent__steker1 {
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    z-index: 1;
+}
+.agent .sgent__steker2 {
+    position: absolute;
+    right: 25px;
+    top: -40px;
+}
+
+@media (max-width:480px) {
+.testimonials .container {
+    padding-inline: 30px;
+    margin-block: 100px;
+}
+.coment__titel .buttons {
+    display: none;
+}
+.coment__box {
+    margin-top: 30px;
+    padding: 40px 30px;
+}
+.coment__box p br {
+    display: none;
+}
+.coment_woner {
+    flex-direction: column;
+}
+.agent {
+    height: 531px;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-top: 100px;
+}
+.agent .person__img {
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    height: 262px;
+    width: 270px;
+}
+.agent .agent__text {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+.agent .register__button {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+}
+.agent .sgent__steker1 {
+    height: 40px;
+    width: 40px;
+    left: 71px;
+   top: 75%;
+}
+.agent .sgent__steker2 {
+    height: 252px;
+    width: 252px;
+    right: -81px;
+    top: -85px;
+}
+}
